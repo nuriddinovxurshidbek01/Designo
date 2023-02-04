@@ -1,0 +1,24 @@
+@mixin display-f($directoin, $align, $justify) {
+    display: flex;
+    flex-direction: $directoin;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin list {
+    list-style-type: none;
+    @include display-f(row, flex-start, space-between);
+}
+
+@mixin link($color, $padding, $bgc) {
+    text-decoration: none;
+    color: $color;
+    padding: $padding;
+    background-color: $bgc;
+}
+
+@mixin d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,120 @@
+.intro {
+    &__inner {
+        max-width: 100%;
+        background-color: #E7816B;
+        border-radius: 15px;
+        background-image: url(../../images/icons/intro_cilic.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        @include display-f(row, flex-start, space-between);
+        &_info {
+            padding: 105px 0 11px 95px;
+            &-title {
+                width: 540px;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 48px;
+                color: #FFFFFF;
+            }
+            &-text {
+                width: 445px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+                padding-bottom: 40px;
+            }
+            &-link {
+                padding: 18px 24px;
+                background-color: #FFFFFF;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+            }
+            &-link:hover {
+                background-color: #FFAD9B;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:689px) {
+    .intro {
+        &__inner {
+            max-width: 100%;
+            background-color: #E7816B;
+            border-radius: 15px;
+            background-image: url(../../images/icons/intro_cilic.svg);
+            background-repeat: no-repeat;
+            background-position: 175px 135px;
+            flex-direction: column;
+            &_info {
+                padding: 60px 55px 25px;
+                text-align: center;
+                margin: 0 auto;
+                &-title {
+                    width: 573px;
+                    padding-bottom: 8px;
+                }
+                &-text {
+                    margin: 0 auto 19px;
+                }
+                &-link {
+                    padding: 18px 24px;
+                }
+                &-link:hover {
+                    background-color: #FFAD9B;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            &_img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .intro {
+        &__inner {
+            margin-bottom: 160px;
+            @include d-flex;
+            max-width: 375px;
+            background-color: #E7816B;
+            background-image: url(../../images/icons/intro_cilic.svg);
+            background-repeat: no-repeat;
+            background-position: 175px 135px;
+            flex-direction: column;
+            margin: 0 auto;
+            &_info {
+                padding: 60px 24px 25px;
+                text-align: center;
+                margin: 0 auto;
+                &-title {
+                    width: 327px;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 36px;
+                    // text-align: center;
+                }
+                &-text {
+                    width: 327px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+            &_img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

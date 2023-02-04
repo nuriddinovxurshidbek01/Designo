@@ -1,0 +1,98 @@
+    .header {
+        max-width: 100%;
+        &__inner {
+            @include d-flex;
+            padding: 30px 0px;
+            .navbar {
+                &_list {
+                    @include d-flex;
+                    width: 370px;
+                    @include list;
+                    &--itam {
+                        &-link {
+                            @include link(#333136, 10px 0, 0);
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 14px;
+                            position: relative;
+                        }
+                        &-link::after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            background-color: #333136;
+                            width: 2px;
+                            height: 2px;
+                            display: none;
+                        }
+                        &-link:hover::after {
+                            display: block;
+                            cursor: pointer;
+                            background-color: #333136;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &_icons {
+                display: none;
+            }
+        }
+    }
+    
+    @media only screen and(max-width:689px) {
+        .header {
+            max-width: 100%;
+            &__inner {
+                @include d-flex;
+                padding: 30px 0;
+                .navbar {
+                    &_list {
+                        @include d-flex;
+                        max-width: 370px;
+                        @include list;
+                        &--itam {
+                            &-link {
+                                @include link(#333136, 10px 0, 0);
+                                transition: 2s;
+                            }
+                            &-link::after {
+                                content: "";
+                                display: block;
+                                background-color: #333136;
+                                width: 2px;
+                                height: 2px;
+                                display: none;
+                            }
+                            &-link:hover::after {
+                                transition: 2s;
+                                display: block;
+                                cursor: pointer;
+                                background-color: #333136;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                &_icons {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    @media only screen and(max-width:375px) {
+        .header {
+            max-width: 100%;
+            &__inner {
+                @include d-flex;
+                padding: 30px 10px;
+                .navbar {
+                    display: none;
+                }
+                &_icons {
+                    display: block;
+                }
+            }
+        }
+    }
