@@ -1,0 +1,84 @@
+.feature {
+    &__inner {
+        &_list {
+            list-style-type: none;
+            @include display-f(row, flex-start, space-between);
+            &---itam {
+                width: 350px;
+                &--img {
+                    position: relative;
+                    left: 70px;
+                    &-bg {
+                        position: absolute;
+                        background-image: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                        width: 202px;
+                        height: 202px;
+                        top: -15px;
+                        mix-blend-mode: normal;
+                        border-radius: 50%;
+                        opacity: 0.2;
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                        display: block;
+                    }
+                }
+                &--info {
+                    margin-top: 48px;
+                    width: 350px;
+                    text-align: center;
+                    &-title {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 26px;
+                        text-align: center;
+                        letter-spacing: 5px;
+                        color: #333136;
+                    }
+                    &-text {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: #333136;
+                        text-align: center;
+                    }
+                }
+            }
+            .resourceful {
+                &--img {
+                    position: relative;
+                    background-color: red;
+                    &-bg {
+                        position: absolute;
+                        background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                        width: 202px;
+                        height: 202px;
+                        top: -15px;
+                        mix-blend-mode: normal;
+                        border-radius: 50%;
+                        opacity: 0.2;
+                        transform: matrix(0, 1, 1, 0, 0, 0);
+                        display: block;
+                    }
+                }
+            }
+            .frendly {
+                .img {
+                    position: relative;
+                    left: 70px;
+                    .bg {
+                        position: absolute;
+                        background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                        width: 202px;
+                        height: 202px;
+                        top: -15px;
+                        mix-blend-mode: normal;
+                        border-radius: 50%;
+                        opacity: 0.2;
+                        transform: matrix(0, -1, -1, 0, 0, 0);
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

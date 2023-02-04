@@ -463,11 +463,11 @@ img {
     display: block;
   }
 }
-.intro__inner {
+.hero__inner {
   max-width: 100%;
   background-color: #E7816B;
   border-radius: 15px;
-  background-image: url(../../images/icons/intro_cilic.svg);
+  background-image: url(../../images/icons/hero_cilic.svg);
   background-repeat: no-repeat;
   background-position: right top;
   display: flex;
@@ -475,17 +475,17 @@ img {
   align-items: flex-start;
   justify-content: space-between;
 }
-.intro__inner_info {
+.hero__inner_info {
   padding: 105px 0 11px 95px;
 }
-.intro__inner_info-title {
+.hero__inner_info-title {
   width: 540px;
   font-weight: 500;
   font-size: 48px;
   line-height: 48px;
   color: #FFFFFF;
 }
-.intro__inner_info-text {
+.hero__inner_info-text {
   width: 445px;
   font-weight: 400;
   font-size: 16px;
@@ -493,7 +493,7 @@ img {
   color: #FFFFFF;
   padding-bottom: 40px;
 }
-.intro__inner_info-link {
+.hero__inner_info-link {
   padding: 18px 24px;
   background-color: #FFFFFF;
   border-radius: 8px;
@@ -505,78 +505,78 @@ img {
   text-transform: uppercase;
   color: #333136;
 }
-.intro__inner_info-link:hover {
+.hero__inner_info-link:hover {
   background-color: #FFAD9B;
   color: white;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 689px) {
-  .intro__inner {
+  .hero__inner {
     max-width: 100%;
     background-color: #E7816B;
     border-radius: 15px;
-    background-image: url(../../images/icons/intro_cilic.svg);
+    background-image: url(../../images/icons/hero_cilic.svg);
     background-repeat: no-repeat;
     background-position: 175px 135px;
     flex-direction: column;
   }
-  .intro__inner_info {
+  .hero__inner_info {
     padding: 60px 55px 25px;
     text-align: center;
     margin: 0 auto;
   }
-  .intro__inner_info-title {
+  .hero__inner_info-title {
     width: 573px;
     padding-bottom: 8px;
   }
-  .intro__inner_info-text {
+  .hero__inner_info-text {
     margin: 0 auto 19px;
   }
-  .intro__inner_info-link {
+  .hero__inner_info-link {
     padding: 18px 24px;
   }
-  .intro__inner_info-link:hover {
+  .hero__inner_info-link:hover {
     background-color: #FFAD9B;
     color: white;
     cursor: pointer;
   }
-  .intro__inner_img {
+  .hero__inner_img {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 375px) {
-  .intro__inner {
+  .hero__inner {
     margin-bottom: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 375px;
     background-color: #E7816B;
-    background-image: url(../../images/icons/intro_cilic.svg);
+    background-image: url(../../images/icons/hero_cilic.svg);
     background-repeat: no-repeat;
     background-position: 175px 135px;
     flex-direction: column;
     margin: 0 auto;
   }
-  .intro__inner_info {
+  .hero__inner_info {
     padding: 60px 24px 25px;
     text-align: center;
     margin: 0 auto;
   }
-  .intro__inner_info-title {
+  .hero__inner_info-title {
     width: 327px;
     font-weight: 500;
     font-size: 32px;
     line-height: 36px;
   }
-  .intro__inner_info-text {
+  .hero__inner_info-text {
     width: 327px;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
   }
-  .intro__inner_img {
+  .hero__inner_img {
     margin: 0 auto;
   }
 }
@@ -623,17 +623,21 @@ img {
   grid-column: 2/3;
 }
 
-.goodSides__inner_list {
+.feature__inner_list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 }
-.goodSides__inner_list---itam--img {
-  position: relative;
+.feature__inner_list---itam {
+  width: 350px;
 }
-.goodSides__inner_list---itam--img-bg {
+.feature__inner_list---itam--img {
+  position: relative;
+  left: 70px;
+}
+.feature__inner_list---itam--img-bg {
   position: absolute;
   background-image: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
   width: 202px;
@@ -645,14 +649,56 @@ img {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   display: block;
 }
-.goodSides__inner_list---itam--info {
+.feature__inner_list---itam--info {
+  margin-top: 48px;
+  width: 350px;
   text-align: center;
 }
-.goodSides__inner_list---itam--info-title {
+.feature__inner_list---itam--info-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 5px;
   color: #333136;
+}
+.feature__inner_list---itam--info-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333136;
+  text-align: center;
+}
+.feature__inner_list .resourceful--img {
+  position: relative;
+  background-color: red;
+}
+.feature__inner_list .resourceful--img-bg {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+  width: 202px;
+  height: 202px;
+  top: -15px;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  opacity: 0.2;
+  transform: matrix(0, 1, 1, 0, 0, 0);
+  display: block;
+}
+.feature__inner_list .frendly .img {
+  position: relative;
+  left: 70px;
+}
+.feature__inner_list .frendly .img .bg {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+  width: 202px;
+  height: 202px;
+  top: -15px;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  opacity: 0.2;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  display: block;
 }/*# sourceMappingURL=main.css.map */

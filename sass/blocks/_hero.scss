@@ -1,9 +1,9 @@
-.intro {
+.hero {
     &__inner {
         max-width: 100%;
         background-color: #E7816B;
         border-radius: 15px;
-        background-image: url(../../images/icons/intro_cilic.svg);
+        background-image: url(../../images/icons/hero_cilic.svg);
         background-repeat: no-repeat;
         background-position: right top;
         @include display-f(row, flex-start, space-between);
@@ -46,12 +46,12 @@
 }
 
 @media only screen and(max-width:689px) {
-    .intro {
+    .hero {
         &__inner {
             max-width: 100%;
             background-color: #E7816B;
             border-radius: 15px;
-            background-image: url(../../images/icons/intro_cilic.svg);
+            background-image: url(../../images/icons/hero_cilic.svg);
             background-repeat: no-repeat;
             background-position: 175px 135px;
             flex-direction: column;
@@ -83,13 +83,13 @@
 }
 
 @media only screen and(max-width:375px) {
-    .intro {
+    .hero {
         &__inner {
             margin-bottom: 160px;
             @include d-flex;
             max-width: 375px;
             background-color: #E7816B;
-            background-image: url(../../images/icons/intro_cilic.svg);
+            background-image: url(../../images/icons/hero_cilic.svg);
             background-repeat: no-repeat;
             background-position: 175px 135px;
             flex-direction: column;
