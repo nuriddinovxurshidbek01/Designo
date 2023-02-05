@@ -44,3 +44,120 @@
         }
     }
 }
+
+@media only screen and (max-width:768px) {
+    .callAction {
+        position: relative;
+        margin-top: 360px;
+        &__inner {
+            position: absolute;
+            top: -200px;
+            // bottom: 150px;
+            display: block;
+            background-image: url(../../images/icons/rwd.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #E7816B;
+            background-size: contain;
+            padding: 72px 95px;
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            &_info {
+                width: 459px;
+                &--title {
+                    width: 345px;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-left: 120px;
+                }
+                &--text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    width: 573px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+            }
+            &_link {
+                text-decoration: none;
+                background-color: white;
+                color: black;
+                padding: 17px 18px;
+                border-radius: 8px;
+                text-transform: uppercase;
+                margin-left: 200px;
+            }
+            &_link:hover {
+                background-color: #FFAD9B;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .callAction {
+        position: relative;
+        margin-top: 360px;
+        &__inner {
+            position: absolute;
+            top: -200px;
+            display: block;
+            background-image: url(../../images/icons/rew.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #E7816B;
+            background-size: contain;
+            padding: 72px 95px;
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            &_info {
+                width: 327px;
+                padding: 50px 48px;
+                margin-left: 0;
+                &--title {
+                    width: 279px;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-left: -110px;
+                }
+                &--text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    width: 279px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-left: -110px;
+                }
+            }
+            &_link {
+                text-decoration: none;
+                background-color: white;
+                color: black;
+                padding: 17px 18px;
+                border-radius: 8px;
+                text-transform: uppercase;
+                margin-left: 10px;
+            }
+            &_link:hover {
+                background-color: #FFAD9B;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+}
