@@ -1365,6 +1365,7 @@ img {
   .callAction {
     position: relative;
     margin-top: 360px;
+    padding: 0 40px;
   }
   .callAction__inner {
     position: absolute;
