@@ -1,0 +1,36 @@
+.contries {
+    margin: 0;
+    padding: 0;
+    &__list {
+        list-style-type: none;
+        @include display-f(row, flex-start, space-between);
+        &_itam {
+            &--box {
+                &-title {
+                    margin-top: 48px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 26px;
+                    text-align: center;
+                    letter-spacing: 5px;
+                    color: #333136;
+                }
+                &-link {
+                    margin-top: 32px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    background: #E7816B;
+                    border-radius: 8px;
+                    padding: 18px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

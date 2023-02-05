@@ -1,0 +1,98 @@
+.contactHero {
+    margin-bottom: 160px;
+    &__inner {
+        background: #E7816B;
+        border-radius: 15px;
+        background-image: url(../../images/icons/contactBG.svg);
+        background-repeat: no-repeat;
+        background-position: -20px 2px;
+        @include display-f(row, flex-start, space-between);
+        &_info {
+            padding: 100px 32px 161px 95px;
+            &--title {
+                &-us {
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                }
+            }
+            &--text {
+                width: 445px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+        }
+        &_form {
+            padding: 50px 136px 0 50px;
+            input::placeholder {
+                color: white;
+                opacity: 0.5;
+            }
+            .text {
+                width: 350px;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ffff;
+                padding: 11px;
+                display: block;
+                margin-bottom: 15px;
+                &:focus {
+                    outline: none;
+                    border-bottom: 3px solid #ffff;
+                }
+            }
+            .email {
+                width: 350px;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ffff;
+                padding: 11px;
+                display: block;
+                margin-bottom: 15px;
+                &:focus {
+                    outline: none;
+                    border-bottom: 3px solid #ffff;
+                }
+            }
+            .tel {
+                width: 350px;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ffff;
+                padding: 11px;
+                display: block;
+                margin-bottom: 15px;
+                &:focus {
+                    outline: none;
+                    border-bottom: 3px solid #ffff;
+                }
+            }
+            .message {
+                &::placeholder {
+                    color: white;
+                    opacity: 0.5;
+                }
+                width: 350px;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ffff;
+                padding: 11px;
+                display: block;
+                &:focus {
+                    outline: none;
+                    border-bottom: 3px solid #ffff;
+                }
+            }
+            .btn {
+                padding: 17px 47px;
+                border-radius: 8px;
+                margin-top: 24px;
+                border: none;
+                margin-left: 200px;
+            }
+        }
+    }
+}

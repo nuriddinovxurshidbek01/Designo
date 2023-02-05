@@ -98,6 +98,8 @@
             margin-bottom: 160px;
             &__inner {
                 background: none;
+                margin: 0;
+                padding: 14px;
                 &_list {
                     margin: 0;
                     padding: 0;
@@ -200,6 +202,7 @@
         .feature {
             margin-bottom: 160px;
             &__inner {
+                padding: 24px;
                 background-image: url(../../images/icons/feltureBG.svg);
                 background-repeat: no-repeat;
                 background-position: 270px 120px;
