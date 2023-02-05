@@ -1,4 +1,5 @@
 .feature {
+    margin-bottom: 160px;
     &__inner {
         background-image: url(../../images/icons/feltureBG.svg);
         background-repeat: no-repeat;
@@ -86,6 +87,109 @@
                 }
                 .text {
                     margin-top: 210px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .feature {
+        margin-bottom: 160px;
+        &__inner {
+            background: none;
+            &_list {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                @include display-f(column, 0, 0);
+                &---itam {
+                    width: 100%;
+                    @include display-f(row, center, space-between);
+                    &--img {
+                        position: relative;
+                        left: 70px;
+                        &-bg {
+                            position: absolute;
+                            background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                            width: 202px;
+                            height: 202px;
+                            top: -15px;
+                            mix-blend-mode: normal;
+                            border-radius: 50%;
+                            opacity: 0.2;
+                            transform: matrix(-1, 0, 0, 1, 0, 0);
+                            display: block;
+                        }
+                    }
+                    &--info {
+                        margin: 0;
+                        width: 439px;
+                        text-align: start;
+                        &-title {
+                            max-width: 439px;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 26px;
+                            text-align: start;
+                            letter-spacing: 5px;
+                            color: #333136;
+                        }
+                        &-text {
+                            width: 439px;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            text-align: start;
+                            color: #333136;
+                            text-align: start;
+                        }
+                    }
+                }
+                .resourceful {
+                    margin-top: 52px;
+                    &--img {
+                        position: relative;
+                        &-bg {
+                            position: absolute;
+                            background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                            width: 202px;
+                            height: 202px;
+                            top: -15px;
+                            mix-blend-mode: normal;
+                            border-radius: 50%;
+                            opacity: 0.2;
+                            transform: matrix(0, 1, 1, 0, 0, 0);
+                            display: block;
+                        }
+                    }
+                }
+                .frendly {
+                    max-width: 100%;
+                    margin-top: -70px;
+                    .img {
+                        position: relative;
+                        left: 70px;
+                        .bg {
+                            position: absolute;
+                            background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                            width: 202px;
+                            height: 202px;
+                            mix-blend-mode: normal;
+                            border-radius: 50%;
+                            opacity: 0.2;
+                            transform: matrix(0, -1, -1, 0, 0, 0);
+                        }
+                        .frend {
+                            position: absolute;
+                            margin-top: 15px;
+                        }
+                    }
+                    .text {
+                        margin-top: 120px;
+                        text-align: start;
+                        width: 439px;
+                    }
                 }
             }
         }

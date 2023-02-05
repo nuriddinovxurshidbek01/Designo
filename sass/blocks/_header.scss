@@ -1,5 +1,6 @@
     .header {
         max-width: 100%;
+        font-family: 'Jost';
         &__inner {
             @include d-flex;
             padding: 30px 0px;
@@ -40,12 +41,12 @@
         }
     }
     
-    @media only screen and(max-width:689px) {
+    @media only screen and(max-width:768px) {
         .header {
             max-width: 100%;
             &__inner {
                 @include d-flex;
-                padding: 30px 0;
+                padding: 30px 10px;
                 .navbar {
                     &_list {
                         @include d-flex;

@@ -1,6 +1,18 @@
 .callAction {
+    position: relative;
+    margin-top: 360px;
     &__inner {
+        position: absolute;
+        top: -200px;
         @include display-f(row, center, space-between);
+        background-image: url(../../images/icons/callBG.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: #E7816B;
+        padding: 72px 95px;
+        border-radius: 15px;
+        width: 1111px;
+        height: 292px;
         &_info {
             width: 459px;
             &--title {
@@ -17,8 +29,18 @@
                 color: #FFFFFF;
             }
         }
-        .link {
+        &_link {
             text-decoration: none;
+            background-color: white;
+            color: black;
+            padding: 17px 18px;
+            border-radius: 8px;
+            text-transform: uppercase;
+        }
+        &_link:hover {
+            background-color: #FFAD9B;
+            cursor: pointer;
+            color: white;
         }
     }
 }
