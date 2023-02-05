@@ -1,5 +1,5 @@
 .contries {
-    margin: 0;
+    margin-bottom: 160px;
     padding: 0;
     &__list {
         list-style-type: none;
@@ -29,6 +29,105 @@
                     border-radius: 8px;
                     padding: 18px;
                     display: block;
+                }
+                &-link:hover {
+                    background-color: #FFAD9B;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .contries {
+        margin-bottom: 160px;
+        padding: 0;
+        &__list {
+            list-style-type: none;
+            @include display-f(column, 0, 0);
+            margin: 0 auto;
+            &_itam {
+                margin: 0 auto;
+                margin-bottom: 80px;
+                &--box {
+                    &-title {
+                        margin-top: 48px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 26px;
+                        text-align: center;
+                        letter-spacing: 5px;
+                        color: #333136;
+                    }
+                    &-link {
+                        margin-top: 32px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        background: #E7816B;
+                        border-radius: 8px;
+                        padding: 18px;
+                        display: block;
+                    }
+                    &-link:hover {
+                        background-color: #FFAD9B;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .contries {
+        margin-bottom: 160px;
+        padding: 0;
+        &__list {
+            list-style-type: none;
+            @include display-f(column, 0, 0);
+            margin: 0 auto;
+            &_itam {
+                margin: 0 auto;
+                margin-bottom: 48px;
+                &--box {
+                    &-title {
+                        margin-top: 48px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 26px;
+                        text-align: center;
+                        letter-spacing: 5px;
+                        color: #333136;
+                    }
+                    &-link {
+                        margin-top: 32px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        background: #E7816B;
+                        border-radius: 8px;
+                        padding: 18px;
+                        display: block;
+                    }
+                    &-link:hover {
+                        background-color: #FFAD9B;
+                        color: white;
+                        cursor: pointer;
+                    }
                 }
             }
         }

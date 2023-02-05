@@ -42,6 +42,7 @@
                 &:focus {
                     outline: none;
                     border-bottom: 3px solid #ffff;
+                    cursor: pointer;
                 }
             }
             .email {
@@ -55,6 +56,7 @@
                 &:focus {
                     outline: none;
                     border-bottom: 3px solid #ffff;
+                    cursor: pointer;
                 }
             }
             .tel {
@@ -68,6 +70,7 @@
                 &:focus {
                     outline: none;
                     border-bottom: 3px solid #ffff;
+                    cursor: pointer;
                 }
             }
             .message {
@@ -84,6 +87,7 @@
                 &:focus {
                     outline: none;
                     border-bottom: 3px solid #ffff;
+                    cursor: pointer;
                 }
             }
             .btn {
@@ -92,6 +96,238 @@
                 margin-top: 24px;
                 border: none;
                 margin-left: 200px;
+            }
+            .btn:hover {
+                background-color: #FFAD9B;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .contactHero {
+        margin-bottom: 160px;
+        padding: 0 40px;
+        &__inner {
+            background: #E7816B;
+            border-radius: 15px;
+            background-image: url(../../images/icons/contactBG.svg);
+            background-repeat: no-repeat;
+            background-position: -80px 20px;
+            @include display-f(column, 0, 0);
+            &_info {
+                padding: 100px 97px 0;
+                &--title {
+                    &-us {
+                        font-weight: 500;
+                        font-size: 48px;
+                        line-height: 48px;
+                        color: #FFFFFF;
+                    }
+                }
+                &--text {
+                    width: 445px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                }
+            }
+            &_form {
+                width: 95%;
+                padding: 50px;
+                input::placeholder {
+                    color: white;
+                    opacity: 0.5;
+                }
+                .text {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    margin-bottom: 15px;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .email {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    margin-bottom: 15px;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .tel {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    margin-bottom: 15px;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .message {
+                    &::placeholder {
+                        color: white;
+                        opacity: 0.5;
+                    }
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .btn {
+                    padding: 17px 47px;
+                    border-radius: 8px;
+                    margin-top: 24px;
+                    border: none;
+                    margin-left: 400px;
+                }
+                .btn:hover {
+                    background-color: #FFAD9B;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .contactHero {
+        margin-bottom: 160px;
+        padding: 0;
+        &__inner {
+            background: #E7816B;
+            border-radius: 15px;
+            background-image: url(../../images/icons/mobilcontact.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            @include display-f(column, 0, 0);
+            &_info {
+                padding: 20px;
+                &--title {
+                    &-us {
+                        font-weight: 500;
+                        font-size: 32px;
+                        line-height: 36px;
+                        color: #FFFFFF;
+                        text-align: center;
+                    }
+                }
+                &--text {
+                    width: 327px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+            &_form {
+                width: 95%;
+                padding: 50px;
+                input::placeholder {
+                    color: white;
+                    opacity: 0.5;
+                }
+                .text {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    margin-bottom: 15px;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .email {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    margin-bottom: 15px;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .tel {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    margin-bottom: 15px;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .message {
+                    &::placeholder {
+                        color: white;
+                        opacity: 0.5;
+                    }
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #ffff;
+                    padding: 11px;
+                    display: block;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid #ffff;
+                        cursor: pointer;
+                    }
+                }
+                .btn {
+                    padding: 17px 47px;
+                    border-radius: 8px;
+                    margin-top: 24px;
+                    border: none;
+                    margin-left: 50px;
+                }
+                .btn:hover {
+                    background-color: #FFAD9B;
+                    color: white;
+                    cursor: pointer;
+                }
             }
         }
     }

@@ -432,6 +432,7 @@ img {
 @media only screen and (max-width: 768px) {
   .header {
     max-width: 100%;
+    padding: 40px;
   }
   .header__inner {
     display: flex;
@@ -479,6 +480,7 @@ img {
 @media only screen and (max-width: 375px) {
   .header {
     max-width: 100%;
+    padding: 0;
   }
   .header__inner {
     display: flex;
@@ -1839,6 +1841,7 @@ img {
 .contactHero__inner_form .text:focus {
   outline: none;
   border-bottom: 3px solid white;
+  cursor: pointer;
 }
 .contactHero__inner_form .email {
   width: 350px;
@@ -1852,6 +1855,7 @@ img {
 .contactHero__inner_form .email:focus {
   outline: none;
   border-bottom: 3px solid white;
+  cursor: pointer;
 }
 .contactHero__inner_form .tel {
   width: 350px;
@@ -1865,6 +1869,7 @@ img {
 .contactHero__inner_form .tel:focus {
   outline: none;
   border-bottom: 3px solid white;
+  cursor: pointer;
 }
 .contactHero__inner_form .message {
   width: 350px;
@@ -1881,6 +1886,7 @@ img {
 .contactHero__inner_form .message:focus {
   outline: none;
   border-bottom: 3px solid white;
+  cursor: pointer;
 }
 .contactHero__inner_form .btn {
   padding: 17px 47px;
@@ -1889,9 +1895,241 @@ img {
   border: none;
   margin-left: 200px;
 }
+.contactHero__inner_form .btn:hover {
+  background-color: #FFAD9B;
+  color: white;
+  cursor: pointer;
+}
 
+@media only screen and (max-width: 768px) {
+  .contactHero {
+    margin-bottom: 160px;
+    padding: 0 40px;
+  }
+  .contactHero__inner {
+    background: #E7816B;
+    border-radius: 15px;
+    background-image: url(../../images/icons/contactBG.svg);
+    background-repeat: no-repeat;
+    background-position: -80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: 0;
+    justify-content: 0;
+  }
+  .contactHero__inner_info {
+    padding: 100px 97px 0;
+  }
+  .contactHero__inner_info--title-us {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+  .contactHero__inner_info--text {
+    width: 445px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+  .contactHero__inner_form {
+    width: 95%;
+    padding: 50px;
+  }
+  .contactHero__inner_form input::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+  .contactHero__inner_form .text {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contactHero__inner_form .text:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .email {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contactHero__inner_form .email:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .tel {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contactHero__inner_form .tel:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .message {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+  }
+  .contactHero__inner_form .message::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+  .contactHero__inner_form .message:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .btn {
+    padding: 17px 47px;
+    border-radius: 8px;
+    margin-top: 24px;
+    border: none;
+    margin-left: 400px;
+  }
+  .contactHero__inner_form .btn:hover {
+    background-color: #FFAD9B;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contactHero {
+    margin-bottom: 160px;
+    padding: 0;
+  }
+  .contactHero__inner {
+    background: #E7816B;
+    border-radius: 15px;
+    background-image: url(../../images/icons/mobilcontact.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: 0;
+    justify-content: 0;
+  }
+  .contactHero__inner_info {
+    padding: 20px;
+  }
+  .contactHero__inner_info--title-us {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .contactHero__inner_info--text {
+    width: 327px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contactHero__inner_form {
+    width: 95%;
+    padding: 50px;
+  }
+  .contactHero__inner_form input::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+  .contactHero__inner_form .text {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contactHero__inner_form .text:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .email {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contactHero__inner_form .email:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .tel {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contactHero__inner_form .tel:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .message {
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    padding: 11px;
+    display: block;
+  }
+  .contactHero__inner_form .message::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+  .contactHero__inner_form .message:focus {
+    outline: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+  .contactHero__inner_form .btn {
+    padding: 17px 47px;
+    border-radius: 8px;
+    margin-top: 24px;
+    border: none;
+    margin-left: 50px;
+  }
+  .contactHero__inner_form .btn:hover {
+    background-color: #FFAD9B;
+    color: white;
+    cursor: pointer;
+  }
+}
 .contries {
-  margin: 0;
+  margin-bottom: 160px;
   padding: 0;
 }
 .contries__list {
@@ -1924,4 +2162,104 @@ img {
   border-radius: 8px;
   padding: 18px;
   display: block;
+}
+.contries__list_itam--box-link:hover {
+  background-color: #FFAD9B;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .contries {
+    margin-bottom: 160px;
+    padding: 0;
+  }
+  .contries__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: 0;
+    justify-content: 0;
+    margin: 0 auto;
+  }
+  .contries__list_itam {
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .contries__list_itam--box-title {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #333136;
+  }
+  .contries__list_itam--box-link {
+    margin-top: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E7816B;
+    border-radius: 8px;
+    padding: 18px;
+    display: block;
+  }
+  .contries__list_itam--box-link:hover {
+    background-color: #FFAD9B;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contries {
+    margin-bottom: 160px;
+    padding: 0;
+  }
+  .contries__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: 0;
+    justify-content: 0;
+    margin: 0 auto;
+  }
+  .contries__list_itam {
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+  .contries__list_itam--box-title {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #333136;
+  }
+  .contries__list_itam--box-link {
+    margin-top: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E7816B;
+    border-radius: 8px;
+    padding: 18px;
+    display: block;
+  }
+  .contries__list_itam--box-link:hover {
+    background-color: #FFAD9B;
+    color: white;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */

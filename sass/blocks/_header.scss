@@ -44,6 +44,7 @@
     @media only screen and(max-width:768px) {
         .header {
             max-width: 100%;
+            padding: 40px;
             &__inner {
                 @include d-flex;
                 padding: 30px 10px;
@@ -85,6 +86,7 @@
     @media only screen and(max-width:375px) {
         .header {
             max-width: 100%;
+            padding: 0;
             &__inner {
                 @include d-flex;
                 padding: 30px 10px;
