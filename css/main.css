@@ -537,6 +537,9 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+  .hero {
+    padding: 0 40px;
+  }
   .hero__inner {
     max-width: 100%;
     background-color: #E7816B;
@@ -1772,7 +1775,6 @@ img {
     margin-bottom: 5px;
   }
   .footer__link__info_box {
-    max-width: 184px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1780,6 +1782,7 @@ img {
   }
   .footer__link__info_box-logo {
     margin: 5px 5px 35px;
+    color: #E7816B;
   }
 }
 .contactHero {
