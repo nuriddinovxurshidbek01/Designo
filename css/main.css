@@ -1740,10 +1740,6 @@ img {
     justify-content: 0;
   }
   .footer__link__info_list {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -1751,8 +1747,10 @@ img {
     justify-content: 0;
   }
   .footer__link__info_list--itam {
-    width: 100%;
-    margin: 0 auto;
+    margin: 25px;
+    padding: 12px 24px;
+    width: 327px;
+    height: 50px;
   }
   .footer__link__info_list--itam-text {
     font-weight: 700;
@@ -1761,10 +1759,8 @@ img {
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
-    margin-bottom: 5px;
   }
   .footer__link__info_list--itam-link {
-    width: 100%;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -1773,10 +1769,7 @@ img {
     mix-blend-mode: normal;
     opacity: 0.5;
     display: block;
-    margin-bottom: 1px;
-  }
-  .footer__link__info_list--itam-logo {
-    display: block;
+    margin-bottom: 5px;
   }
   .footer__link__info_box {
     max-width: 184px;
@@ -1784,12 +1777,9 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 20px auto;
   }
   .footer__link__info_box-logo {
-    margin: 20px 5px;
-    color: #E7816B;
-    display: block;
+    margin: 5px 5px 35px;
   }
 }
 .contactHero {
