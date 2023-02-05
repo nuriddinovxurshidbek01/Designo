@@ -2218,7 +2218,7 @@ img {
 }
 @media only screen and (max-width: 375px) {
   .contries {
-    margin-bottom: 160px;
+    margin-bottom: 60px;
     padding: 0;
   }
   .contries__list {
